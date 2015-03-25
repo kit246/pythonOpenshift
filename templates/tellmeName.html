@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+		<ul>
+			{% for message in messages %}
+				<li>{{ message }}
+			{% endfor %}
+		</ul>
+	{% endif %}
+{% endwith %}
+
+<p>
+You won? Time taken: {{ t }}s. 
+</p>
+Your name: 
+<form method="post" action="{{ save_url }}">
+<input type="text" name="name" />
+<input type="submit" value="Submit" />
+</form>
+
+Go <a href={{home_link}}>Home</a>
+
+{% endblock %}

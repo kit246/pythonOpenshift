@@ -1,0 +1,90 @@
+body {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-size:        medium;
+  padding: 0;
+  margin: 0;
+}
+#body {
+	width: 1004px;
+	background-color: #D2FFAD;
+	margin: 0 auto;
+	padding: 10px;
+}
+.menuButton {
+	background-color: white;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 20px;
+	margin: 0 10px 10px 0;
+}
+.menuButton:hover {
+	background-color: #ADFFF0;
+}
+th {
+	background-color: #487820;
+	color: whitesmoke;
+}
+tr:nth-child(2n){
+	background-color: #CCFFE7;
+}
+a {
+  text-decoration:  none; 
+  font-weight:      600; 
+  color:            #3366CC;
+}
+a:hover {
+  text-decoration:  underline;
+}
+h2 {
+  font-weight:      normal;
+  color:            #3366CC;
+  font-size:        150%;
+}
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+  
+}
+td, th {
+  padding:          5px;
+  text-align:       left;
+}
+textarea {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+}
+.copyright {
+  margin: 50px auto 0;
+  font-size:        70%;
+  font-style:       italic;
+  color:            #3366CC;
+  width: 250px;
+}
+
+/*** Tables ***/
+
+table {
+font-size:1em;
+background-color:#fafcff;
+border:1px solid #909090;
+color:#2a2a2a;
+padding:5px 5px 2px;
+border-collapse: collapse;
+}
+
+td, th {
+border: 0px dotted gray;
+}
+
+/*** Inputs ***/
+input[type=text] {
+  font-size:    115%
+}
+input[type=submit] {
+  font-size:    115%
+}
+select {
+  font-size:    125%
+}

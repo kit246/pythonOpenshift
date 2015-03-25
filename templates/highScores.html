@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+
+{% if lis %}
+	<table>
+	<thead><tr><th>#</th><th>Name</th><th>Score</th></tr></thead>
+		{% for message in lis %}
+			<tr>
+				{% for li in message %}
+					<td>{{ li }}</td>
+				{% endfor %}
+			</tr>
+		{% endfor %}
+	</table>
+{% endif %}
+
+{% if position %}
+	<p>
+	You are {{position}}
+	</p>
+{% endif %}
+
+<br>
+	
+Go <a href={{home_link}}>Home</a>
+
+{% endblock %}

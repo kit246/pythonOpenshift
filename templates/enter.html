@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block the_body %}
+
+<h3><span style="font-weight: normal">Your word is: </span>{{source}}</h3>
+
+Please enter seven words made from the letters that make the word above:<br>
+
+<form action="{{ the_save_url }}" method="POST">
+
+	<input type="hidden" name="source" value="{{ source }}"/>
+	<input type="text" name="input[]" placeholder="Word 1" required="required"/><br>
+	<input type="text" name="input[]" placeholder="Word 2" required="required"/><br>
+	<input type="text" name="input[]" placeholder="Word 3" required="required"/><br>
+	<input type="text" name="input[]" placeholder="Word 4" required="required"/><br>
+	<input type="text" name="input[]" placeholder="Word 5" required="required"/><br>
+	<input type="text" name="input[]" placeholder="Word 6" required="required"/><br>
+	<input type="text" name="input[]" placeholder="Word 7" required="required"/><br>
+    <p>
+    <input type="SUBMIT" value="Submit">
+    </p>
+
+</form>
+
+<br>
+Go <a href={{home_link}}>Home</a>
+{% endblock %}

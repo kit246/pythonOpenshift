@@ -1,0 +1,8 @@
+1.0	Kamil3
+8.29	master
+9.038	kamil
+9.97	super
+10.0	kamil2
+10.45	kamil
+17.44	none
+100.0	Kamil4
